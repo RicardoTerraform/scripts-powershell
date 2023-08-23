@@ -11,12 +11,12 @@
 
 ##################################################
 #PARAMETERS TO NOT CHANGE
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 $Exclude = "POINTPUBLISHINGTOPIC#0","POINTPUBLISHINGHUB#0", "TEAMCHANNEL#1", "TEAMCHANNEL#0", "RedirectSite#0","SPSMSITEHOST#0", "EDISC#0","STS#-1","SRCHCEN#0"
 $countSite=1
 ##################################################
 
-$Owner = "1rjalves@worten.pt"
+$Owner = ""
 
 #Connect to PnP Online
 Connect-PnPOnline -Url $TenantAdminURL -Interactive

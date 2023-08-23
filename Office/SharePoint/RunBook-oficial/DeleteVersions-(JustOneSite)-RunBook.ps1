@@ -7,7 +7,7 @@
 # Especificar qual o site $SitesURL
 #
 # Validar que o user admin que executar este scrip DEVE SER "Site Admin" de todos os sites
-# O user Admin que executar este código tem de estar adicionado à Enterprice APP "PnP Management Shell" - App ID: 31359c7f-bd7e-475c-86db-fdb8c937548e e fazer um user consent"
+# O user Admin que executar este código tem de estar adicionado à Enterprice APP "PnP Management Shell" - App ID:  e fazer um user consent"
 # Só admins podem ser membros desta App "PnP Management Shell"
 #
 ############################################################################################################
@@ -29,7 +29,7 @@ $VersionsCount=0
 $minorTotal=0
 $countSite=1
 $save = @()
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 
 #Exclude files type
 $SystemItem ='\.(PDF|PNG|JPG|JPEG|MSG|EXE|HTML)$'
@@ -55,7 +55,7 @@ $Query = "<View Scope='Recursive'>
 #SharePoint does not permit to delete the last versions Histories.
 #If $VersionsToKeep=10, SharePoint will keep a total of 11 versions
 $VersionsToKeep = 5
-$SitesURL = "https://worten.sharepoint.com/sites/EquipaMarketplaceWorten-DigitalBusiness"
+$SitesURL = "https://(...).sharepoint.com/sites/qaz"
 
 
 Connect-PnPOnline -Url $TenantAdminURL -Interactive

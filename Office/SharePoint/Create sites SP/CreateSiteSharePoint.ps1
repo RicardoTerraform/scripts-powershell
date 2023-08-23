@@ -10,7 +10,7 @@
 # Caso os campos não estejam todos preenchidos irá aparecer um erro.
 # No final do script irá aparecer uma mensagem com os sites que foram Sucedidos/Não Sucedidos
 #
-# O user Admin que executar este código tem de estar adicionado à Enterprice APP "PnP Management Shell" - App ID: 31359c7f-bd7e-475c-86db-fdb8c937548e e fazer um user consent"
+# O user Admin que executar este código tem de estar adicionado à Enterprice APP "PnP Management Shell" - App ID:  e fazer um user consent"
 # Só admins podem ser membros desta App "PnP Management Shell"
 #
 # Caso não tenha o Modulo PnP instalado:
@@ -23,8 +23,8 @@
 
 
 
-Connect-SPOService -Url "https://worten-admin.sharepoint.com/"
-Connect-PnPOnline -Url "https://worten-admin.sharepoint.com/" -Interactive
+Connect-SPOService -Url "https://(...)-admin.sharepoint.com/"
+Connect-PnPOnline -Url "https://(...)-admin.sharepoint.com/" -Interactive
 
 $save = @()
 $count=1
@@ -44,7 +44,7 @@ try{
     [long]$quotaGB=0
     [long]$quota=0
     $VersioningLimit=5
-    $OwnerAdmin = "1rjalves@worten.pt"
+    $OwnerAdmin = ""
 
 
     foreach($verification in $DATA)
@@ -66,7 +66,7 @@ try{
         Write-Host "$count) Site a ser criado..." -ForegroundColor Yellow
         $title = $line.Title
         $titlejoin = $title -replace '[^a-zA-Z0-9]', ''
-        $url = "https://worten.sharepoint.com/sites/$titlejoin"
+        $url = "https://(...).sharepoint.com/sites/$titlejoin"
         $owner = $line.Owner
         [long]$quota = $line.QuotaGB
         [long]$quotaGB = $quota * 1024

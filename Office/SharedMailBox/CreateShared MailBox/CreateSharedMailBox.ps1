@@ -60,7 +60,7 @@ try{
 
     #Change UPN Azure AD
     $localuser = Get-AzureADUser -SearchString $DATA.Email
-    $localuser | foreach {$newUpn = $_.UserPrincipalName.Replace("worten.onmicrosoft.com","worten.pt"); $_ | Set-AzureADUser -UserPrincipalName $newUpn}
+    $localuser | foreach {$newUpn = $_.UserPrincipalName.Replace("(...).onmicrosoft.com","(...).pt"); $_ | Set-AzureADUser -UserPrincipalName $newUpn}
     $localuserObjectID = (Get-AzureADUser -SearchString $DATA.Email).ObjectID
     
     #Change MANAGEBY Azure AD

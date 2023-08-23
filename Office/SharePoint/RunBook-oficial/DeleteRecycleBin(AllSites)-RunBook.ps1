@@ -8,7 +8,7 @@
 
 ##################################################
 #PARAMETERS TO NOT CHANGE
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 $Exclude = "POINTPUBLISHINGTOPIC#0","POINTPUBLISHINGHUB#0", "TEAMCHANNEL#1", "TEAMCHANNEL#0", "RedirectSite#0","SPSMSITEHOST#0", "EDISC#0","STS#-1","SRCHCEN#0"
 
 $i=1

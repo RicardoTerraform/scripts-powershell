@@ -52,7 +52,7 @@ $OpenFileDialog.filter = "All files (*.*)| *.*"
 $OpenFileDialog.ShowDialog() |  Out-Null   
 
 $file_path = Import-Csv $OpenFileDialog.filename
-#$file_path = Import-Csv C:\Users\ricardo.j.alves\Desktop\Worten\Scripts\Office\Rooms.csv
+#$file_path = Import-Csv C:\Users\Rooms.csv
 
 $total=0
 $i=0
@@ -96,7 +96,7 @@ foreach($file in $file_path)
         New-Mailbox -DisplayName $Displayname -Name $name -PrimarySmtpAddress $email -Room
         $password = $null
     }#>
-    $password = "WRT#vc2022"
+    $password = ""
     New-Mailbox -DisplayName $Displayname -Name $name -PrimarySmtpAddress $email -Password (ConvertTo-SecureString -String $password -AsPlainText -Force) -ResetPasswordOnNextLogon $false -Room
     Start-Sleep -Seconds 10
     #Set-CalendarProcessing -AllowRecurringMeetings $True/$False -ScheduleOnlyDuringWorkHours $True/$False -BookingWindowInDays $BookingWindowInDays -MaximumDurationInMinutes $MaximumDurationInMinutes
@@ -121,7 +121,7 @@ foreach($file in $file_path)
      
 }
 #create a export file
-$ListItemCollection | Export-csv -Path "C:\Users\ricardo.j.alves\Desktop\GroupPasswords.csv" -NoTypeInformation 
+$ListItemCollection | Export-csv -Path "C:\UsersGroupPasswords.csv" -NoTypeInformation 
 
 Write-Host " Waiting 2min30s to change the UPN" 
 Start-Sleep -Seconds 180
@@ -134,7 +134,7 @@ foreach($files in $file_path)
     $emails = $files.Email
     #Get-AzureADUser -SearchString $emails
     $localuser = Get-AzureADUser -SearchString $emails
-    $localuser | foreach {$newUpn = $_.UserPrincipalName.Replace("worten.onmicrosoft.com","worten.pt"); $_ | Set-AzureADUser -UserPrincipalName $newUpn}
+    $localuser | foreach {$newUpn = $_.UserPrincipalName.Replace("(...).onmicrosoft.com","(...).pt"); $_ | Set-AzureADUser -UserPrincipalName $newUpn}
     #Get-AzureADUser -SearchString $emails
 }
 

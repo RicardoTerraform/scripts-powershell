@@ -1,5 +1,4 @@
 ﻿$Users = Get-Mailbox -ResultSize unlimited 
-#$Users = Get-Mailbox -identity SAGRAMACA@Worten.pt
 $result = @()
 $totalmbx = $Users.Count
 $i = 0

@@ -12,11 +12,11 @@
 
 ##################################################
 #PARAMETERS TO NOT CHANGE
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 ##################################################
 
-$Owner = "1rjalves@worten.pt"
-$SiteURL = "https://worten.sharepoint.com/sites/DigitalismSummerInternship"
+$Owner = ""
+$SiteURL = "https://(...).sharepoint.com/sites/qaz"
 
 #Connect to PnP Online
 Connect-PnPOnline -Url $TenantAdminURL -Interactive

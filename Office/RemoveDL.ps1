@@ -1,6 +1,6 @@
 ﻿Connect-ExchangeOnline
 
-$file_path= Get-Content C:\Users\ricardo.j.alves\Desktop\dados.txt
+$file_path= Get-Content C:\Users\dados.txt
 
 foreach($file in $file_path)
 {

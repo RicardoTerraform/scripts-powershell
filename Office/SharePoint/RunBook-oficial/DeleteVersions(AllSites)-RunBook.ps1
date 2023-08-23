@@ -28,7 +28,7 @@ $VersionsCount=0
 $minorTotal=0
 $countSite=1
 $save = @()
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 
 #Exclude files type
 $SystemItem ='\.(PDF|PNG|JPG|JPEG|MSG|EXE|HTML)$'

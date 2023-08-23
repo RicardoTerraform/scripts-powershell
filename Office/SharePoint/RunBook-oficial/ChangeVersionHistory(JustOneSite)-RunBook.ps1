@@ -12,13 +12,12 @@
 ##################################################
 #PARAMETERS TO NOT CHANGE
 #Set Variables
-$TenantAdminURL = "https://worten-admin.sharepoint.com/"
+$TenantAdminURL = "https://(...)-admin.sharepoint.com/"
 
 ###################################################
 
 $VersioningLimit=5
-#$SiteURL = "https://worten.sharepoint.com/sites/"
-$SiteURL = "https://worten.sharepoint.com/sites/DigitalismSummerInternship"
+$SiteURL = "https://(...).sharepoint.com/sites/qaz"
 
 #Connect
 Connect-PnPOnline -Url $TenantAdminURL -Interactive

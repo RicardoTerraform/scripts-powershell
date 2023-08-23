@@ -11,7 +11,7 @@ Connect-AzureAD
 $Path = "C:\Users\dados.TXT"
 $file_path = Get-content -path $Path
 
-$ObjectidGroup = "21a8e30f-8559-4706-9992-041cb150d062"
+$ObjectidGroup = ""
 
 foreach($file in $file_path)
 {

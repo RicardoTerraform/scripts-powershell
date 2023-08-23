@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=eaeN9pkAGwg
+
+https://o365info.com/room-mailbox-powershell-commands/
+
+https://docs.microsoft.com/en-us/powershell/module/exchange/set-calendarprocessing?view=exchange-ps
+
+
+
+
+https://docs.microsoft.com/en-us/previous-versions/exchange-server/exchange-150/jj650877(v=exchg.150)?redirectedfrom=MSDN

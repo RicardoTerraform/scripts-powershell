@@ -1,0 +1,2 @@
+DisplayName,Description,GroupType,MembershipRule
+Amoreirasteste1,TesteGroupCreation1,DynamicMembership,"(user.extensionAttribute14 -contains ""519897"") and (user.extensionAttribute12 -eq ""GENFUNC"")"
